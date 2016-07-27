@@ -4,6 +4,7 @@
 
 IE를 생성한다. 
 
+
 ;메인주서를 변수로 설정
 $뉴스URL=http://news.naver.com 설정한다.
 
