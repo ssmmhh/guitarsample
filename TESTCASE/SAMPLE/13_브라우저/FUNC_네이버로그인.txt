@@ -1,0 +1,15 @@
+; 네이버 로그인 테스트
+
+; IP보안 OFF
+; 정보 설정
+$네이버로그아웃페이지=http://nid.naver.com/nidlogin.logout?returl=http://www.naver.com 설정한다.
+
+$네이버로그아웃페이지로 접속한다.   
+IP보안ON이 있으면 IP보안ON 클릭한다.
+FUNC_네이버로그인_단계별.txt을 실행한다.
+
+; IP보안 ON
+$네이버로그아웃페이지로 접속한다.   
+IP보안OFF 클릭한다.
+FUNC_네이버로그인_단계별.txt을 실행한다.
+
