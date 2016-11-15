@@ -11,7 +11,7 @@ IE 생성한다.
 "$검색어_ENCODE=_ANSIURLEncode('|$검색어|')" 계산한다.
 $검색URL=http://search.naver.com/search.naver?sm=tab_hty&where=nexearch&query=|$검색어_ENCODE 설정한다. 
 $검색URL로 접속한다. 
-검색결과탭제목(정렬)을 클릭하고 $검색어 내용확인한다.
+ $검색어 내용확인한다.
 현재화면을 캡쳐한다.
 
 ; _ANSIURLDecode($sText)
@@ -19,7 +19,7 @@ $검색URL로 접속한다.
 "$검색어_DECODE=_ANSIURLDecode('|$검색어_ENCODE|')" 계산한다.
 $검색URL=http://search.naver.com/search.naver?sm=tab_hty&where=nexearch&query=|$검색어_DECODE 설정한다. 
 $검색URL로 접속한다. 
-검색결과탭제목(정렬)을 클릭하고 $검색어 내용확인한다.
+ $검색어 내용확인한다.
 현재화면을 캡쳐한다.
 
 
@@ -29,7 +29,7 @@ $검색URL로 접속한다.
 "$검색어_ENCODE=_UnicodeURLEncode('|$검색어|')" 계산한다.
 $검색URL=http://search.naver.com/search.naver?sm=tab_hty&where=nexearch&query=|$검색어_ENCODE 설정한다. 
 $검색URL로 접속한다. 
-검색결과탭제목(정렬)을 클릭하고 $검색어 내용확인한다.
+ $검색어 내용확인한다.
 현재화면을 캡쳐한다.
 
 ; _UnicodeURLDecode($sText)
@@ -37,7 +37,7 @@ $검색URL로 접속한다.
 "$검색어_DECODE=_UnicodeURLDecode('|$검색어_ENCODE|')" 계산한다.
 $검색URL=http://search.naver.com/search.naver?sm=tab_hty&where=nexearch&query=|$검색어_DECODE 설정한다. 
 $검색URL로 접속한다. 
-검색결과탭제목(정렬)을 클릭하고 $검색어 내용확인한다.
+$검색어 내용확인한다.
 현재화면을 캡쳐한다.
 
 현재 브라우저 종료한다.

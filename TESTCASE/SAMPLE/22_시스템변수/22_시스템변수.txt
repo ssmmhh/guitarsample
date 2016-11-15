@@ -34,19 +34,19 @@ $GUITAR_X좌표보정=50 설정하고 국어사전질문이미지를 클릭한다.
 국어사전답변이미지를 확인한다.
 
 http://www.naver.com/ 접속한다.
-; 상단 배너 영역을 상대영역으로 클릭
+; 상단 배너 영역을 상대영역으로 임의 광고 영역 클릭 
 $GUITAR_Y좌표보정=+130 설정하고 네이버메인로고을 클릭한다.
 
 
 
 ;# 브라우저 접속소요시간을 확인
-www.naver.com 접속한다.
+http://www.naver.com 접속한다.
 $GUITAR_최근접속소요시간 로그쓰기 한다.
 
-map.naver.com 접속한다.
+http://map.naver.com 접속한다.
 $GUITAR_최근접속소요시간 로그쓰기 한다.
 
-movie.naver.com 접속한다.
+http://movie.naver.com 접속한다.
 $GUITAR_최근접속소요시간 로그쓰기 한다.
 
 IE를 종료 한다. 

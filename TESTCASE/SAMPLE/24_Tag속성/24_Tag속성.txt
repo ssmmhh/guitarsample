@@ -12,8 +12,8 @@ http://search.naver.com/search.naver?where=nexearch&query=%B3%AA%B4%C2%B0%A1%BC%
 $검색어=나는가수다 같지않으면 실패한다.
 
 ; 검색어를 변경 뒤 재검색 수행
-"[input:name=query:::value]=너도가수냐?"  속성쓰기 한다.
-"[input:alt=검색]"  클릭한다.
+"[input:title=검색어:::value]=너도가수냐?"  속성쓰기 한다.
+"[button::검색]"  클릭한다.
 
 2초 대기한다.
 

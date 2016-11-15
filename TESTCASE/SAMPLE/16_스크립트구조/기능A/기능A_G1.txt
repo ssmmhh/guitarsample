@@ -1,6 +1,6 @@
 ;ID=기능A_001
 ;# AA 기능을 확인 확인한다.
-$테스트URL1=$테스트서비스메인URL|/Traffic_Browser/SubwayLine2/index.asp 설정한다.
+$테스트URL1=$테스트서비스메인URL|/?region=1000&menu=subway&lng=8da87a0148c21ef09045f99867288a97&mapMode=0&lat=89ba53f1cb4f27ed1006657435694113&dlevel=11&enc=b64 설정한다.
 $테스트URL1에 접속한다.
 캡쳐한다.
 

@@ -13,8 +13,4 @@ http://www.naver.com 접속한다.
 ; 추가된 스크립트를 실행
 "[a:title=더보기:::guitar_resize();]" JS실행 한다. , , , , , ,
 
-; 스크롤 기능을 수행하는 JS를 실행
-http://www.lct5579.com.ne.kr/tag/java014.html 접속한다.
-"[input:value=버튼을:::scrollWin();]" JS실행 한다. , , , , , ,
-
 현재 브라우저를 종료한다
