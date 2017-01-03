@@ -10,10 +10,8 @@ http://map.naver.com/ 접속한다.
 "{xpath://button[.='검색']}" 클릭한다. , 
 
 ;# 시스템 경고창의 내용을 시스템 변수로 확인 
-
-전체대상작업으로, 크롬확인 클릭한다.
-
-
+"$GUITAR_WebdriverAlerttext" 로그쓰기한다.
+"$GUITAR_WebdriverAlerttext =검색어를 입력해주세요." 같지않으면 실패한다..
 
 ; 모달창의 "확인" 버튼을 클릭
 경고창확인 한다.

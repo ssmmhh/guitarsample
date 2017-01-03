@@ -7,9 +7,11 @@
 ;Radio 버튼 확인 및 클릭 
 
 http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio 접속한다.
+; male 기본선택 확인
 "$Male선택여부={xpath://input[@value='male']:checked}" 속성읽기
 $Male선택여부=True 같지않으면 실패한다.
 
+; 변경후 확인
 "{xpath://input[@value='other']}" 클릭
 "$Other선택여부={xpath://input[@value='other']:checked}" 속성읽기
 $Other선택여부=True 같지않으면 실패한다.
@@ -18,9 +20,11 @@ $Other선택여부=True 같지않으면 실패한다.
 ;Checkbox 확인 및 클릭 
 http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_checked 접속
 
+; Car 기본선택 확인
 "$car선택여부={xpath://input[@value='Car']:checked}" 속성읽기
 $car선택여부=True 같지않으면 실패한다.
 
+; 변경후 확인
 "{xpath://input[@value='Bike']}" 클릭
 "$bike선택여부={xpath://input[@value='Bike']:checked}" 속성읽기
 $bike선택여부=True 같지않으면 실패한다.
@@ -30,8 +34,11 @@ $car선택여부=True 같지않으면 실패한다.
 
 ;Dropdown 확인 및 클릭 
 http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select 접속
+; volvo 기본선택 확인
 "$기본선택={xpath://select:value}" 속성읽기
 $기본선택=volvo 같지않으면 실패한다.
+
+; 변경후 확인
 "{xpath://option[@value='audi']}" 클릭
 "$기본선택={xpath://select:value}" 속성읽기
 $기본선택=audi 같지않으면 실패한다.

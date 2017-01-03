@@ -6,6 +6,7 @@
 
 ; 소설 페이지
 http://nstore.naver.com/novel/recommendList.nhn 접속한다.
+현재화면을 캡쳐한다.
 
 
 ; 무작위로 노출되는 2번째 무료 소설 클릭
