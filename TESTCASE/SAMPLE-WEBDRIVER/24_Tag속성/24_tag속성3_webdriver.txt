@@ -1,0 +1,26 @@
+;-----------------------------------------------------------------------------------------------------------------------------------------
+;# 설명 :  CheckBox, DropDownBox 값을 읽는 예제
+;-----------------------------------------------------------------------------------------------------------------------------------------
+
+"$신규세션={host=localhost:4444,browserName=chrome,platform=WINDOWS}" 세션생성 한다.
+
+; 날씨페이지 접속
+http://weather.naver.com/ 접속한다.
+
+; 지난날씨달력 항목의 지역선택상자(DropDownBox)의 현재 선택된 값을 읽어와 "서울특별시"와 같은지 비교 
+"$지역TAGID={xpath://select[@name='upperNaverRgnCd']:value}" 속성읽기
+"$지역TAGTEXT={xpath://option[@value='|$지역TAGID|']:text}" 속성읽기
+$지역TAGTEXT=서울특별시 같지않으면 실패한다.
+현재화면 캡쳐
+
+
+;DropDownBox의 선택 항목을 "강원도"로 변경 
+"{xpath://option[. = '강원도']}" 클릭
+"$지역TAGID={xpath://select[@name='upperNaverRgnCd']:value}" 속성읽기
+"$지역TAGTEXT={xpath://option[@value='|$지역TAGID|']:text}" 속성읽기
+$지역TAGTEXT=강원도 같지않으면 실패한다.
+
+현재화면 캡쳐
+
+브라우저를 세션종료한다.
+

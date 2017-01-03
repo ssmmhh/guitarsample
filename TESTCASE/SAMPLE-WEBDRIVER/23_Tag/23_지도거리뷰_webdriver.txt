@@ -1,0 +1,24 @@
+;-----------------------------------------------------------------------------------------------------------------------------------------
+;# 설명 : 다양한 형태의 DOM Object를 지정하는 방법 설명
+;-----------------------------------------------------------------------------------------------------------------------------------------
+
+"$신규세션={host=localhost:4444,browserName=ie,platform=WINDOWS}" 세션생성 한다.
+
+http://map.naver.com/?dlevel=5&lat=37.4609612&lng=126.9390061&query=6rCV7Zi464%2BZ7Jyh7Lmg7YyU&menu=location&stab=SITE_1%3B1&siteOrder=287958099&queryRank=1&mapMode=0&enc=b64 접속한다.
+; 지도 검색목록중에서 육칠팔 송파점의 "거리뷰" 버튼을 클릭 (div 태그내부의 img 태그를 클릭)
+;"[dt::육칠팔 분당점\a:title=거리뷰]" 클릭한다.  , ,
+"{xpath://dt[contains(.,'육칠팔 분당점')]//a[@title='거리뷰']}" 클릭한다. , , 
+현재 화면을 캡쳐한다.
+
+; 날씨 아이콘 클릭
+http://map.naver.com/ 접속한다.
+"{xpath://a[starts-with(@href,'http://weather.naver.com/rgn/townWetr.nhn')]}"를 클릭한다.
+
+; 날씨 팝업창으로 브라우저로 포커스 이동 
+"{xpath://img[@title='날씨']}" 선택한다. , , 
+현재 화면을 캡쳐한다.
+현재 창을 종료 한다.
+
+; 다시 지도 창으로 이동
+"{xpath://a[starts-with(@href,'http://weather.naver.com/rgn/townWetr.nhn')]}"를 선택한다. 
+브라우저를 세션종료한다.

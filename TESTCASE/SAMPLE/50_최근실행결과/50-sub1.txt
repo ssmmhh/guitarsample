@@ -1,0 +1,5 @@
+$GUITAR_RecentResult 로그쓰기한다.
+50-실패.txt 실행한다.  
+$GUITAR_RecentResult 로그쓰기한다.
+
+

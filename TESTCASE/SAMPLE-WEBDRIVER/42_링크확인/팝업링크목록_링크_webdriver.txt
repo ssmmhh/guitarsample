@@ -1,0 +1,2 @@
+{xpath://a[contains(. , '법적공지')]}
+{xpath://a[contains(. , '수정요청')]}

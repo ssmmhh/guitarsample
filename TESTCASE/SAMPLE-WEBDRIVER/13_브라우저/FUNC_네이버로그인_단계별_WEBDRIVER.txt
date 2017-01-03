@@ -1,0 +1,15 @@
+"{name:pw}" 확인한다. , 
+"{name:pw}" 을 클릭한다. , 
+"{name:id}" 을 클릭한다. , 
+$네이버ID를 입력다.
+"{TAB}"키를 누른다. 
+$네이버PW를 입력다 
+"{css:input[title='로그인']}" 을 클릭한다. , 
+
+2초 대기한다. 
+"{class:btn_logout}" 확인한다. 
+현재화면을 캡쳐한다.
+
+
+"{class:btn_logout}" 클릭 
+"{css:input[title='로그인']}" 확인한다. 

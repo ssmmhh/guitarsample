@@ -1,0 +1,20 @@
+;-----------------------------------------------------------------------------------------------------------------------------------------
+;# 설명 : WEBDRIVER 의 브라우저를 실행 하고 종료함 
+;# 아래와 같은 형태로 selenium 을 설치하고, 각각 IE, 와 CHROME에 대한 설정을 해 주어야 함
+;# java -jar selenium-server-standalone-2.40.0.jar -Dwebdriver.ie.driver="E:\winapp\iedriver\IEDriverServer.exe" -Dwebdriver.chrome.driver="E:\winapp\chromedriver\chromedriver.exe"
+;# 참고 : http://www.seleniumhq.org/download/
+;-----------------------------------------------------------------------------------------------------------------------------------------
+; IE 테스트 
+"$신규세션={host=localhost:4444,browserName=ie,platform=WINDOWS}" 세션생성 한다.
+http://www.google.com 접속
+현재화면을 캡쳐한다.
+브라우저를 세션종료한다.
+
+
+; CHROME 테스트 
+"$신규세션={host=localhost:4444,browserName=chrome,platform=WINDOWS}" 세션생성 한다.
+http://www.google.com 접속
+현재화면을 캡쳐한다.
+브라우저를 세션종료한다.
+
+

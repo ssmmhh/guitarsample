@@ -1,0 +1,69 @@
+;-----------------------------------------------------------------------------------------------------------------------------------------
+;# selenium 2.x 지원
+;# 아래와 같은 형태로 selenium 2.x standalone 버전을 설치하고, 각각 IE, 와 CHROME에 driver 대한 설정을 해야함. 
+;# 예)  java -jar selenium-server-standalone-2.40.0.jar -Dwebdriver.ie.driver="E:\winapp\iedriver\IEDriverServer.exe" -Dwebdriver.chrome.driver="E:\winapp\chromedriver\chromedriver.exe"
+;# 참고 : http://www.seleniumhq.org/download/
+;-----------------------------------------------------------------------------------------------------------------------------------------
+
+; WEBDRIVER 신규세션 생성 (id로 테스트하고자 할 경우 chrome 부분을 ie 로 변경하면 됨)
+"$신규세션={host=localhost:4444,browserName=chrome,platform=WINDOWS}" 세션생성 한다.
+
+;# WEBDRIVER 모드를 확인함, (현재 GUITAR가 Webdriver 모드로 작동중인지를 확인) 
+$GUITAR_Webdriver 로그쓰기 한다.
+
+;ID=구글 검색 테스트
+http://www.google.com 접속
+
+
+; 아래 예제는 모두 구글의 "검색창"을 클릭하는 예제임 
+
+	; Xpath 방식으로 찾기 
+	"{xpath://input[@name='q']}" 클릭한다. 
+
+	; css  방식으로 찾기 
+	"{css:input[name='q']}" 클릭한다. 
+
+	; name 속성으로 찾기 
+	"{name:q}" 클릭한다. 
+
+	; id 속성으로 찾기 
+	"{id:lst-ib}" 클릭한다. 
+
+	; class 속성으로 찾기 
+	"{class:gsfi}" 클릭한다. 
+
+
+"네이버 테스트 자동화 {ENTER} " 입력한다. 
+
+; xpath 형태로 "테스트 자동화..." 문자열이 있는 A태그가 있는지 확인함.
+"{xpath://a[contains(.,'테스트 자동화 도구 GUITAR') ]}" 확인한다. 
+현재화면을 캡쳐한다. 
+
+
+;ID=네이버 검색 테스트1
+네이버 메인 http://www.naver.com 으로 접속한다. , 
+
+;name 이 query (검색창)을 태그를 찾아 클릭 
+"{name:query}" 클릭한다. 
+검색어 "GUI 테스트 자동화"를 입력하고 , 
+
+;오른쪽 검색버튼을 클릭한다. (id 값으로 검색)
+"{id:search_btn}" 클릭한다. 
+
+;검색결과 화면에 "검색결과(테스트 자동화)"가  있는지 확인
+"{xpath://a[contains(.,'테스트 자동화')]}" 확인한다.
+
+현재화면을 캡쳐한다. 
+
+종료 한다.
+; ID=네이버 검색 테스트2
+네이버 메인 http://www.naver.com 으로 접속한다.  ,
+
+; 검색어 입력
+"{name:query}" 클릭한다.  검색어 "NHN"를 입력하고 , "{ENTER}"키를 누른다. ,
+
+; 검색결과 화면의 3가지 Text "네이버 주식회사, 바로가기,회사소개"가 모두 있는지 확인
+"{xpath://*[contains(.,'네이버 주식회사') and contains(.,'바로가기') and contains(.,'회사소개')]}" 확인한다.
+현재화면을 캡쳐한다.
+	
+브라우저를 세션종료한다.

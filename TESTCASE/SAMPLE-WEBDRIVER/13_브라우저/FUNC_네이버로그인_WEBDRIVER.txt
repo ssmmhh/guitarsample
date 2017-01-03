@@ -1,0 +1,15 @@
+; 네이버 로그인 테스트
+
+; 정보 설정
+$네이버로그아웃페이지=http://nid.naver.com/nidlogin.logout?returl=http://www.naver.com 설정한다.
+
+; 1차 IP보안 OFF로 로그인
+$네이버로그아웃페이지로 접속한다.   
+"{xpath://label[@class='lbl_type on']}" 있으면 "{xpath://label[@class='lbl_type on']}" 클릭한다.
+FUNC_네이버로그인_단계별_WEBDRIVER.txt을 실행한다.
+
+; 2차 IP보안 ON로 로그임
+$네이버로그아웃페이지로 접속한다.   
+"{xpath://label[@class='lbl_type']}" 클릭한다.
+FUNC_네이버로그인_단계별_WEBDRIVER.txt을 실행한다.
+

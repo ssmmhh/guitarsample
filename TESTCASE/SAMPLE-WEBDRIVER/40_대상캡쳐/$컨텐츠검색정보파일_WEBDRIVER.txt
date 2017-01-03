@@ -1,0 +1,5 @@
+http://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=
+베스트셀러 순위,xpath://div[@class='content_search section'],베스트셀러 정보
+지하철 노선도,xpath://div[@class='cs_pubtrans_wrap'],수도권
+영화 순위,xpath://div[@class='content_search section'],한국 박스오피스 순위
+END
