@@ -4,12 +4,11 @@
 
 IE 생성한다.
 
-"$검색어=맨유" 설정한다.
+"$검색어=맨체스터 유나이티드" 설정한다.
 http://search.naver.com/search.naver?sm=tab_hty&where=nexearch&query=|$검색어| 접속한다.
 
 ; 컨텐츠 영역확인
 "[div:class=content_search section]" 확인한다.
-
 ; 최근 확인된 영역을 캡쳐
 "$GUITAR_최근전체좌표,|$검색어|"를 부분캡쳐한다.
 

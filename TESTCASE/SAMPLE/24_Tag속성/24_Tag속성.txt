@@ -20,19 +20,12 @@ $검색어=나는가수다 같지않으면 실패한다.
 현재화면을 캡쳐한다.
 
 
-; 키워드광고 페이지
-http://searchad.naver.com/ 접속한다.
 
-;class=N=a:ntc.list (공지사항 첫번째 항목)
-; = , : 특수문자들은 HTML 코드로 변환 하여 지정
-"[a:class=N&#61;a&#58;ntc.list]" 클릭한다.
-
-
-http://searchad.naver.com/ 접속한다.
-
+http://help.naver.com/support/bbs/notice.nhn 접속한다.
 ; ^ 를 사용하여 and 옵션으로 필터를 지정 
-; ntt.list 를 포함하면서 주소에 searchad.naver.com 이 포함된 a태그 
-"[a:class=ntc.list^href=searchad.naver.com]" 클릭한다.
+
+; DIV 항목중 class 와 id 2개 조건을 만족하는 항목을 찾음 (상단 게시물 제목)
+"[div:class=skin skin_del_writer_recommend^id=n2_no_recommend]" 확인한다.
 
 현재화면을 캡쳐한다.
 

@@ -4,7 +4,7 @@
 
 ; 테스트할 ID/PW를 설정 (사용가능한 장보로 수정 변경 필요)
 $네이버ID=username 설정한다.
-$네이버PW=usernpassword 설정한다. 
+$네이버PW=username 설정한다. 
 
 $네이버ID=username 같으면 "네이버 ID/PW 정보를 변경하시고 테스트 진행해 주시기 바랍니다." 로그쓰기 하고, 실패한다.
 

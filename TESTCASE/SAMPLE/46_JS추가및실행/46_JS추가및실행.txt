@@ -8,9 +8,11 @@ IE 생성한다.
 http://www.naver.com 접속한다.
 
 ; 동적으로 스크롤 기능을 하는 guitar_resize  JS 추가 
-"[a:title=더보기:::function guitar_resize() {resizeTo(500,500);}]" JS추가 한다.
+"[a::네이버::function guitar_resize() {resizeTo(500,500);}]" JS추가 한다.
 
-; 추가된 스크립트를 실행
-"[a:title=더보기:::guitar_resize();]" JS실행 한다. , , , , , ,
+; 추가된 스크립트를 실행 (사이즈 조절)
+"[a::네이버:::guitar_resize();]" JS실행 한다. , , , , , ,
+
+현재 화면 캡쳐
 
 현재 브라우저를 종료한다
